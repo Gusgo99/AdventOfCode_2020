@@ -21,6 +21,10 @@ include_directories("${PROJECT_SOURCE_DIR}/src")
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
 add_executable(day1_report_repair "${PROJECT_SOURCE_DIR}/src/day1_report_repair.cpp")
+add_executable(day2_password_philosophy "${PROJECT_SOURCE_DIR}/src/day2_password_philosophy.cpp")
 
 set_standard_cxx_flags(day1_report_repair PUBLIC)
+set_standard_cxx_flags(day2_password_philosophy PUBLIC)
+
 set_standard_linker_flags(day1_report_repair PRIVATE)
+set_standard_linker_flags(day2_password_philosophy PRIVATE)
