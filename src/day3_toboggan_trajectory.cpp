@@ -61,7 +61,7 @@ size_t solve_part_one(const std::vector<entry> &_entries) {
 
 		}
 		_linePosition += 3;
-		if(_linePosition > _entries[i].size()) _linePosition -= _entries[i].size();
+		if(_linePosition >= _entries[i].size()) _linePosition -= _entries[i].size();
 	}
 
 	return _treeCount;
