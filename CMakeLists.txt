@@ -25,15 +25,18 @@ add_executable(day2_password_philosophy "${PROJECT_SOURCE_DIR}/src/day2_password
 add_executable(day3_toboggan_trajectory "${PROJECT_SOURCE_DIR}/src/day3_toboggan_trajectory.cpp")
 add_executable(day4_passport_processing "${PROJECT_SOURCE_DIR}/src/day4_passport_processing.cpp")
 add_executable(day5_binary_boarding "${PROJECT_SOURCE_DIR}/src/day5_binary_boarding.cpp")
+add_executable(day6_custom_customs "${PROJECT_SOURCE_DIR}/src/day6_custom_customs.cpp")
 
 set_standard_cxx_flags(day1_report_repair PUBLIC)
 set_standard_cxx_flags(day2_password_philosophy PUBLIC)
 set_standard_cxx_flags(day3_toboggan_trajectory PUBLIC)
 set_standard_cxx_flags(day4_passport_processing PUBLIC)
 set_standard_cxx_flags(day5_binary_boarding PUBLIC)
+set_standard_cxx_flags(day6_custom_customs PUBLIC)
 
 set_standard_linker_flags(day1_report_repair PRIVATE)
 set_standard_linker_flags(day2_password_philosophy PRIVATE)
 set_standard_linker_flags(day3_toboggan_trajectory PRIVATE)
 set_standard_linker_flags(day4_passport_processing PRIVATE)
 set_standard_linker_flags(day5_binary_boarding PRIVATE)
+set_standard_linker_flags(day6_custom_customs PRIVATE)
