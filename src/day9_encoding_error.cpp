@@ -5,7 +5,7 @@
 
 constexpr size_t PREAMBLE = 25;
 
-using entry = uint64_t;
+using entry = int64_t;
 
 std::vector<entry> read_entries_from_file();
 int64_t solve_part_one(const std::vector<entry> &_entries);
@@ -64,7 +64,7 @@ int64_t solve_part_one(const std::vector<entry> &_entries) {
 }
 
 int64_t solve_part_two(const std::vector<entry> &_entries) {
-	const int64_t _foundNumber = solve_part_one(_entries);
+	const int64_t FOUND_NUMBER = solve_part_one(_entries);
 	int64_t _solution = 0;
 
 	std::vector<entry> _sums = _entries;
@@ -72,9 +72,9 @@ int64_t solve_part_two(const std::vector<entry> &_entries) {
 	for(size_t i = 1; i < _entries.size(); i++) _sums[i] += _sums[i - 1];
 
 	for(size_t i = 0; i < _entries.size(); i++) {
-		if(std::binary_search(_sums.begin(), _sums.end(), _foundNumber + _sums[i])) {
+		if(std::binary_search(_sums.begin(), _sums.end(), FOUND_NUMBER + _sums[i])) {
 			auto _beginRange = _entries.begin() + i;
-			auto _endRange = std::find(_sums.begin(), _sums.end(), _foundNumber + _sums[i]);
+			auto _endRange = std::find(_sums.begin(), _sums.end(), FOUND_NUMBER + _sums[i]);
 			auto _actualEndRange = _entries.begin() + (_endRange - _sums.begin());
 			_solution = *std::min_element(_beginRange, _actualEndRange) + *std::max_element(_beginRange, _actualEndRange);
 			break;
