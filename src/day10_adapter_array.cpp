@@ -2,8 +2,6 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <stack>
-#include <map>
 
 constexpr int64_t MAX_JOLTAGE_INCREASE = 3;
 
@@ -67,32 +65,19 @@ int64_t solve_part_one(const std::vector<entry> &_entries) {
 }
 
 int64_t solve_part_two(const std::vector<entry> &_entries) {
-	std::map<size_t, int64_t> _lookup;
-	std::stack<size_t> _indexesToLook;
+	std::vector<size_t> _lookup(_entries.size());
 	int64_t _solution = 0;
 
 	_lookup[_entries.size() - 1] = 1;
 
-	_indexesToLook.push(0);
-
-	while(!_indexesToLook.empty()) {
-		size_t _index = _indexesToLook.top();
-		bool _found = true;
+	for(size_t i = _entries.size() - 1; i > 0; i--) {
 		int64_t _acc = 0;
-		for(size_t i = _index + 1; i < _entries.size(); i++) {
-			if((_entries[i] - _entries[_index]) > MAX_JOLTAGE_INCREASE) break;
-			if(_lookup.find(i) != _lookup.end()) {
-				_acc += _lookup[i];
-			}
-			else {
-				_indexesToLook.push(i);
-				_found = false;
-			}
+		for(size_t j = i; j < _entries.size(); j++) {
+			if((_entries[j] - _entries[i - 1]) > MAX_JOLTAGE_INCREASE) break;
+			_acc += _lookup[j];
 		}
-		if(_found) {
-			_lookup[_index] = _acc;
-			_indexesToLook.pop();
-		}
+		_lookup[i - 1] = _acc;
+
 	}
 
 	_solution = _lookup[0];
