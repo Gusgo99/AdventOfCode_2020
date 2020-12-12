@@ -31,7 +31,7 @@ std::vector<entry> read_entries_from_file() {
 	_entries.reserve(1000);
 
 	if(_input.is_open()) {
-        std::string _line;
+		std::string _line;
 		while(!_input.eof()) {
 			std::getline(_input, _line);
 			if(_line != "") _entries.push_back(_line);

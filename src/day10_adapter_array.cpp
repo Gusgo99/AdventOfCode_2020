@@ -33,7 +33,7 @@ std::vector<entry> read_entries_from_file() {
 
 	_entries.reserve(1000);
 
-    _entries.push_back(0);
+	_entries.push_back(0);
 
 	if(_input.is_open()) {
 		entry _currentEntry;
@@ -44,7 +44,7 @@ std::vector<entry> read_entries_from_file() {
 
 	_input.close();
 
-    std::sort(_entries.begin(), _entries.end());
+	std::sort(_entries.begin(), _entries.end());
 
 	_entries.push_back(_entries.back() + MAX_JOLTAGE_INCREASE);
 
