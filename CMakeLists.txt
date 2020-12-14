@@ -20,41 +20,25 @@ endif()
 include_directories("${PROJECT_SOURCE_DIR}/src")
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
-add_executable(day1_report_repair "${PROJECT_SOURCE_DIR}/src/day1_report_repair.cpp")
-add_executable(day2_password_philosophy "${PROJECT_SOURCE_DIR}/src/day2_password_philosophy.cpp")
-add_executable(day3_toboggan_trajectory "${PROJECT_SOURCE_DIR}/src/day3_toboggan_trajectory.cpp")
-add_executable(day4_passport_processing "${PROJECT_SOURCE_DIR}/src/day4_passport_processing.cpp")
-add_executable(day5_binary_boarding "${PROJECT_SOURCE_DIR}/src/day5_binary_boarding.cpp")
-add_executable(day6_custom_customs "${PROJECT_SOURCE_DIR}/src/day6_custom_customs.cpp")
-add_executable(day7_handy_haversacks "${PROJECT_SOURCE_DIR}/src/day7_handy_haversacks.cpp")
-add_executable(day8_handheld_halting "${PROJECT_SOURCE_DIR}/src/day8_handheld_halting.cpp")
-add_executable(day9_encoding_error "${PROJECT_SOURCE_DIR}/src/day9_encoding_error.cpp")
-add_executable(day10_adapter_array "${PROJECT_SOURCE_DIR}/src/day10_adapter_array.cpp")
-add_executable(day11_seating_system "${PROJECT_SOURCE_DIR}/src/day11_seating_system.cpp")
-add_executable(day12_rain_risk "${PROJECT_SOURCE_DIR}/src/day12_rain_risk.cpp")
+set(
+	FILES
+	"day1_report_repair"
+	"day2_password_philosophy"
+	"day3_toboggan_trajectory"
+	"day4_passport_processing"
+	"day5_binary_boarding"
+	"day6_custom_customs"
+	"day7_handy_haversacks"
+	"day8_handheld_halting"
+	"day9_encoding_error"
+	"day10_adapter_array"
+	"day11_seating_system"
+	"day12_rain_risk"
+	"day14_docking_data"
+)
 
-set_standard_cxx_flags(day1_report_repair PUBLIC)
-set_standard_cxx_flags(day2_password_philosophy PUBLIC)
-set_standard_cxx_flags(day3_toboggan_trajectory PUBLIC)
-set_standard_cxx_flags(day4_passport_processing PUBLIC)
-set_standard_cxx_flags(day5_binary_boarding PUBLIC)
-set_standard_cxx_flags(day6_custom_customs PUBLIC)
-set_standard_cxx_flags(day7_handy_haversacks PUBLIC)
-set_standard_cxx_flags(day8_handheld_halting PUBLIC)
-set_standard_cxx_flags(day9_encoding_error PUBLIC)
-set_standard_cxx_flags(day10_adapter_array PUBLIC)
-set_standard_cxx_flags(day11_seating_system PUBLIC)
-set_standard_cxx_flags(day12_rain_risk PUBLIC)
-
-set_standard_linker_flags(day1_report_repair PRIVATE)
-set_standard_linker_flags(day2_password_philosophy PRIVATE)
-set_standard_linker_flags(day3_toboggan_trajectory PRIVATE)
-set_standard_linker_flags(day4_passport_processing PRIVATE)
-set_standard_linker_flags(day5_binary_boarding PRIVATE)
-set_standard_linker_flags(day6_custom_customs PRIVATE)
-set_standard_linker_flags(day7_handy_haversacks PRIVATE)
-set_standard_linker_flags(day8_handheld_halting PRIVATE)
-set_standard_linker_flags(day9_encoding_error PRIVATE)
-set_standard_linker_flags(day10_adapter_array PRIVATE)
-set_standard_linker_flags(day11_seating_system PRIVATE)
-set_standard_linker_flags(day12_rain_risk PRIVATE)
+foreach(FILE ${FILES})
+	add_executable(${FILE} "${PROJECT_SOURCE_DIR}/src/${FILE}.cpp")
+	set_standard_cxx_flags(${FILE} PRIVATE)
+	set_standard_linker_flags(${FILE} PRIVATE)
+endforeach()
