@@ -35,6 +35,7 @@ set(
 	"day11_seating_system"
 	"day12_rain_risk"
 	"day14_docking_data"
+	"day15_rambunctious_recitation"
 )
 
 foreach(FILE ${FILES})
