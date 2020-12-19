@@ -37,6 +37,7 @@ set(
 	"day14_docking_data"
 	"day15_rambunctious_recitation"
 	"day16_ticket_translation"
+	"day19_monster_message"
 )
 
 foreach(FILE ${FILES})
