@@ -39,6 +39,7 @@ set(
 	"day16_ticket_translation"
 	"day17_conway_cubes"
 	"day19_monster_message"
+	"day24_lobby_layout"
 	"day25_combo_breaker"
 )
 
