@@ -109,20 +109,18 @@ size_t solve_part_one(input &_input) {
 		int64_t _currentId = _toCheck.top();
 		bool _completed = true;
 		std::string _result;
-		if(_rules[_currentId].empty()) {
-			for(auto &i: _input.linkedRules[_currentId]) {
-				if(!_result.empty()) _result += ")|(";
-				for(auto j: i) {
-					if(_rules[j].empty()) {
-						_completed = false;
-						_toCheck.push(j);
-						break;
+		for(auto &i: _input.linkedRules[_currentId]) {
+			if(!_result.empty()) _result += ")|(";
+			for(auto j: i) {
+				if(_rules[j].empty()) {
+					_completed = false;
+					_toCheck.push(j);
+					break;
 
-					}
-					else if(_completed) {
-						_result += "(" + _rules[j] + ")";
+				}
+				else if(_completed) {
+					_result += "(" + _rules[j] + ")";
 
-					}
 				}
 			}
 		}
