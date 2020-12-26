@@ -38,6 +38,7 @@ set(
 	"day15_rambunctious_recitation"
 	"day16_ticket_translation"
 	"day17_conway_cubes"
+	"day18_operation_order"
 	"day19_monster_message"
 	"day23_crab_cups"
 	"day24_lobby_layout"
