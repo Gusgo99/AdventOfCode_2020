@@ -40,6 +40,7 @@ set(
 	"day17_conway_cubes"
 	"day18_operation_order"
 	"day19_monster_message"
+	"day22_crab_combat"
 	"day23_crab_cups"
 	"day24_lobby_layout"
 	"day25_combo_breaker"
