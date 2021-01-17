@@ -13,6 +13,7 @@ function(set_standard_c_flags TARGET VISIBILITY)
 				-Wshadow
 				-Wcast-align
 				-Wunused
+				-Wmisleading-indentation
 			)
 		endif()
 	elseif(CMAKE_BUILD_TYPE STREQUAL Release)
@@ -42,6 +43,7 @@ function(set_standard_cxx_flags TARGET VISIBILITY)
 				-Wnon-virtual-dtor
 				-Wold-style-cast
 				-Woverloaded-virtual
+				-Wmisleading-indentation
 			)
 		endif()
 	elseif(CMAKE_BUILD_TYPE STREQUAL Release)
