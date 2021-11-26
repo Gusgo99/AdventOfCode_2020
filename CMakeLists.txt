@@ -41,6 +41,7 @@ set(
 	"day17_conway_cubes"
 	"day18_operation_order"
 	"day19_monster_message"
+	"day20_jurassic_jigsaw"
 	"day21_allergen_assessment"
 	"day22_crab_combat"
 	"day23_crab_cups"
