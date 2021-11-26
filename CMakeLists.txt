@@ -34,6 +34,7 @@ set(
 	"day10_adapter_array"
 	"day11_seating_system"
 	"day12_rain_risk"
+	"day13_shuttle_search"
 	"day14_docking_data"
 	"day15_rambunctious_recitation"
 	"day16_ticket_translation"
