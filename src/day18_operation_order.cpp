@@ -1,9 +1,4 @@
-#include <algorithm>
-#include <chrono>
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <regex>
+#include "headers.hpp"
 
 std::vector<std::string> split(std::string _input, const std::string &_delimiter) {
 	std::vector<std::string> _output;

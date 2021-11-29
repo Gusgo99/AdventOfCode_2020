@@ -1,10 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <stack>
-#include <map>
-#include <variant>
+#include "headers.hpp"
 
 using mask_assignment = std::pair<uint64_t, uint64_t>;
 using memory_assignment = std::pair<uint64_t, int64_t>;

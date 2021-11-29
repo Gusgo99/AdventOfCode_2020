@@ -1,9 +1,4 @@
-#include <algorithm>
-#include <chrono>
-#include <fstream>
-#include <iostream>
-#include <map>
-#include <vector>
+#include "headers.hpp"
 
 using entry = std::string;
 

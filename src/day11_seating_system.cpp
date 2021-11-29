@@ -1,7 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <vector>
+#include "headers.hpp"
 
 using entry = std::string;
 

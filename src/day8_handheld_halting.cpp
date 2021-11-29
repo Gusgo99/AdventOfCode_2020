@@ -1,10 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <stack>
-
-#include <chrono>
+#include "headers.hpp"
 
 enum class instruction {ACC, JMP, NOP};
 

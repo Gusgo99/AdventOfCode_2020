@@ -1,10 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <stack>
-#include <map>
-#include <optional>
+#include "headers.hpp"
 
 using entry = std::pair<int64_t, std::vector<std::optional<int64_t>>>;
 

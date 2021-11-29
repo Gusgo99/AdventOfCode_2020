@@ -1,7 +1,4 @@
-#include <algorithm>
-#include <iostream>
-#include <fstream>
-#include <vector>
+#include "headers.hpp"
 
 using entry = std::tuple<uint32_t, uint32_t, char, std::string>;
 

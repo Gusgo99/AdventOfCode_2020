@@ -1,12 +1,4 @@
-#include <algorithm>
-#include <chrono>
-#include <fstream>
-#include <iostream>
-#include <iterator>
-#include <map>
-#include <set>
-#include <stack>
-#include <vector>
+#include "headers.hpp"
 
 struct input {
 	std::vector<std::vector<int64_t>> decks;

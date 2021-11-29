@@ -1,10 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <iterator>
-#include <vector>
-#include <map>
-#include <stack>
+#include "headers.hpp"
 
 using entry = std::pair<size_t, std::vector<std::pair<size_t, size_t>>>;
 

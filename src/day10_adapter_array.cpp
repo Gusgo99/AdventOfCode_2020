@@ -1,7 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <vector>
+#include "headers.hpp"
 
 constexpr int64_t MAX_JOLTAGE_INCREASE = 3;
 

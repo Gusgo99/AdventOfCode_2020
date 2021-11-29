@@ -1,9 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <variant>
-#include <set>
+#include "headers.hpp"
 
 constexpr size_t FIELD_COUNT = 20;
 

@@ -1,12 +1,4 @@
-#include <algorithm>
-#include <chrono>
-#include <fstream>
-#include <iostream>
-#include <iterator>
-#include <vector>
-#include <map>
-#include <set>
-#include <stack>
+#include "headers.hpp"
 
 struct input {
 	std::map<int64_t, std::vector<std::string>> images;

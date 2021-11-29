@@ -1,7 +1,4 @@
-#include <algorithm>
-#include <iostream>
-#include <fstream>
-#include <vector>
+#include "headers.hpp"
 
 std::vector<uint32_t> read_entries_from_file();
 std::array<uint32_t, 2> solve_part_one(const std::vector<uint32_t> &_entries);

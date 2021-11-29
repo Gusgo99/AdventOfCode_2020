@@ -1,12 +1,4 @@
-#include <algorithm>
-#include <chrono>
-#include <fstream>
-#include <iostream>
-#include <iterator>
-#include <map>
-#include <stack>
-#include <vector>
-#include <set>
+#include "headers.hpp"
 
 struct input {
 	std::vector<std::set<size_t>> ingredients;

@@ -1,12 +1,4 @@
-#include <algorithm>
-#include <chrono>
-#include <fstream>
-#include <iostream>
-#include <iterator>
-#include <list>
-#include <map>
-#include <stack>
-#include <vector>
+#include "headers.hpp"
 
 using input = std::string;
 

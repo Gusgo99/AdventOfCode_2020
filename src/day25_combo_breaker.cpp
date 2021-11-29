@@ -1,7 +1,4 @@
-#include <algorithm>
-#include <chrono>
-#include <fstream>
-#include <iostream>
+#include "headers.hpp"
 
 constexpr int64_t MAGIC_NUMBER = 20201227;
 

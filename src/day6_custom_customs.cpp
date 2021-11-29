@@ -1,9 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <iterator>
-#include <set>
-#include <vector>
+#include "headers.hpp"
 
 using entry = std::vector<std::set<char>>;
 

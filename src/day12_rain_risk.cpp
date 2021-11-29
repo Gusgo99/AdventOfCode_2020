@@ -1,9 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <vector>
-#include <stack>
-#include <map>
+#include "headers.hpp"
 
 using entry = std::pair<char, int64_t>;
 

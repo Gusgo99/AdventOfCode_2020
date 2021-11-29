@@ -1,12 +1,4 @@
-#include <algorithm>
-#include <fstream>
-#include <iostream>
-#include <iterator>
-#include <vector>
-#include <map>
-#include <stack>
-#include <variant>
-#include <regex>
+#include "headers.hpp"
 
 struct input {
 	std::map<int64_t, std::string> actualRules;
