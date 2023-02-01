@@ -51,6 +51,10 @@ set(
 
 foreach(FILE ${FILES})
 	add_executable(${FILE} "${PROJECT_SOURCE_DIR}/src/${FILE}.cpp")
+	set_property(
+		TARGET ${FILE} 
+		PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+	)
 	set_standard_cxx_flags(${FILE} PRIVATE)
 	set_standard_linker_flags(${FILE} PRIVATE)
 endforeach()
